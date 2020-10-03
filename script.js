@@ -12,12 +12,12 @@ let ready = false;
 let totalImages = 0;
 let imageLoaded = 0;
 
-//loaded functions
+//check if loadded
 function imageLoading() {
     imageLoaded++;
     if (imageLoaded == totalImages){
         ready = true;
-        getPhotos();
+        loader.hidden=true;
     }
 }
 
